@@ -230,7 +230,7 @@ const MODULES = [
   id:'distances', short:"Distances", num:3, accent:'var(--violet)',
   title:'Stellar Distances & Standard Candles', who:'Bessel · Pogson · Henrietta Swan Leavitt', era:'1838 – 1990s',
   builds:['positions'], related:[['cosmic_distance_ladder.html','The Cosmic Distance Ladder'],['discovery_of_universe_scale.html','The Day We Found the Universe'],['trigonometry_companion.html','Trigonometry for Astrophysics']],
-  intro:R`Nearby stars show a tiny geometric wobble, their parallax. Farther away geometry gives out, and astronomers switch to "standard candles": objects whose true brightness can be worked out from something else you can see, such as a pulsation period. Comparing true and apparent brightness then gives the distance.`,
+  intro:R`Stellar distance is often calculated by measuring a stars brightness. However, what is the difference between a distant star that is very bright and a closer star that is dim? Thus, astronomers have to measure a stars true brightness. This is often calculated using "standard candles". True brightness for these stars are in turn worked out from things like pulsation periods. Comparing their true brightness to their apparent brightness then reveals its distance, in the same way that the distance between you and someone else holding a flashlight can be calculated if you know the flashlights true brightness. Once standard candles are known, distance to other stars in close proximity can be calculated.`,
   steps:[
     { title:'Small angles',
       idea:R`A far-off object of size $D$ at distance $d$ covers a tiny angle. For small angles the angle (in radians) is just size divided by distance.`,
