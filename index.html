@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>astroComputer — the reasoning behind astrophysical calculations</title>
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\\[','\\]']] },
+    svg: { fontCache: 'global' },
+    startup: { ready(){ MathJax.startup.defaultReady(); MathJax.startup.promise.then(()=>window.__mjReady && window.__mjReady()); } }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="starfield"></canvas>
+
+<nav>
+  <div class="wrap">
+    <div class="brand" id="brand">astroComputer <small>Calculate the sky the way the computers did</small></div>
+    <div class="links" id="navlinks"></div>
+  </div>
+</nav>
+
+<div id="home">
+  <header class="hero">
+    <h1><span class="grad">astroComputer</span></h1>
+    <p class="sub">Before electronic machines, a "computer" was a person, often one of the women at Harvard College Observatory, who turned raw starlight into numbers. Learn their calculations one idea at a time, then reassemble them yourself.</p>
+    <div class="how">
+      <div><b>① Overview</b>Each formula is explained step by step: what every variable means, why astronomers chose that formula, and the idea behind it.</div>
+      <div><b>② Practice</b>No arithmetic. Each problem is a puzzle: choose the right formula tile from the tray, including some wrong ones, and place it in the correct slot.</div>
+      <div><b>③ Build up</b>Within a module, steps go from simple to complex. Later modules reuse earlier ones, so working in order works best.</div>
+    </div>
+  </header>
+  <main>
+    <div class="path" id="path"></div>
+  </main>
+</div>
+
+<main id="module" class="hidden"></main>
+
+<footer>
+  astroComputer · progress is saved in this browser · <button id="resetAll">reset all progress</button>
+</footer>
+
+<script src="content.js"></script>
+<script src="figures.js"></script>
+<script src="links.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
